@@ -2,3 +2,5 @@
 
 <p>Address: <%= @busStop.address %></p>
 <p>Coordinates: <%= @busStop.latitude %> <%= @busStop.longitude %></p>
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@busStop.latitude},#{@busStop.longitude}&markers=#{@busStop.latitude},#{@busStop.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@busStop.title} on the map"%>
