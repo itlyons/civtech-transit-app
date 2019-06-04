@@ -25,6 +25,6 @@ Geocoder.configure(
   # :ip_lookup => :freegeoip, # for IP addresses
   lookup: :google, # for street addresses
   ip_lookup: :freegeoip, # for IP addresses
-  api_key: "AIzaSyBkMAAWFtgABrsFngm-mYFmCiqjv9IRFco"
+  api_key: "AIzaSyCjSZ6Xz70elyGUyWVH4mV7OyXWshRYhXY"
 
 )
