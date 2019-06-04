@@ -19,9 +19,12 @@ Geocoder.configure(
   # Calculation options
   # units: :mi,                 # :km for kilometers or :mi for miles
   # distances: :linear          # :spherical or :linear
-  :lookup => :google, # for street addresses
-  :ip_lookup => :freegeoip # for IP addresses
-  
-  api_key: "AIzaSyChc9I9gpY3Bgv7gLXwrb-b8pr9kcnTNCY"
+
+  #
+  # :lookup => :google, # for street addresses
+  # :ip_lookup => :freegeoip, # for IP addresses
+  lookup: :google, # for street addresses
+  ip_lookup: :freegeoip, # for IP addresses
+  api_key: "AIzaSyBkMAAWFtgABrsFngm-mYFmCiqjv9IRFco"
 
 )
