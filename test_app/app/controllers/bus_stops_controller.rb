@@ -16,10 +16,16 @@ class BusStopsController < ApplicationController
       render 'new'
     end
   end
+  
+  def show
+      @busStop = BusStop.find(params[:id])
+  end
 
   private
 
   def bus_stop_params
     params.require(:bus_stop).permit(:title, :address, :visited_by)
   end
+  
+
 end
