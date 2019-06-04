@@ -1,9 +1,12 @@
 <header><h1 class="display-4">BusStops</h1></header>
 
-<%= link_to 'Add bus stop', new_bus_stop_path, class: 'btn btn-primary btn-lg' %>
+<%= link_to 'Let others know what is happening at your bus stop', new_bus_stop_path, class: 'btn btn-primary btn-lg' %>
 
 <div class="card">
   <div class="card-block">
+    <p></p>
+    <p></p>
+    Here's what others have to say:
     <ul>
       <%= render @busStops %>
     </ul>
