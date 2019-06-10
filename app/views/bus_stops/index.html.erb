@@ -3,6 +3,11 @@
 
 <header><h1 class="display-4">BusScout Beta</h1></header>
 
+<form action='/bus_stops/show'>
+  <input name='name' placeholder="Enter in your bus stop name">
+  <input type='submit'>
+</form>
+
 <%= link_to 'Let others know what is happening at your bus stop', new_bus_stop_path, class: 'btn btn-primary btn-lg' %>
 
 <div class="card">
