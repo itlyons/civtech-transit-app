@@ -48,4 +48,4 @@ bower.json
 node_modules/
 
 #Ignore underlying data
-/db/shapefiles
+/db/bus_stop_data

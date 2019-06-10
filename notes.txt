@@ -1,0 +1,25 @@
+To access the sqlite console:  sqlite3 db/development.sqlite3
+
+
+
+How to add shapefile/geojson data to sqlite database:
+
+0. Install the following gems, in terminal:
+gem install rgeo
+gem install rgeo-shapefile
+gem install json
+
+1. Create a table, in terminal:
+      rails g model BusStopLocations Street:string Cross_street:string Direction:string City:string Public_name:string Point_X:float Point_Y:float
+
+2. Save the shapefile into db file
+
+3. convert shapefile to geojson, in terminal:
+ogr2ogr -f GeoJSON -t_srs EPSG:4269 [filename].geojson [filename].shp
+
+4. Create a rake task, in terminal:  rails g task import_geojson_bustops
+
+5. Edit the rails task to load in info from the geojson (See lib/tasks/import_geojson_bustops.rake)
+
+6. Run the rake task:  bundle exec rake [rake_file]:[task_name]
+      eg: bundle exec rake import_geojson_bustops:add_bus_data
