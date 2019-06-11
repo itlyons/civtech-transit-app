@@ -1,7 +1,7 @@
 <%= render '/layouts/header' %>
+<div class="container">
+<h1>Search Result</h1>
 
-<h3>Search Result</h3>
-
-    <% @results.each do |result| %>
-        <%= result.name %><br>
-    <% end %>
+    <%= render @results  %>
+        <br>
+</div>

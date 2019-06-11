@@ -18,8 +18,8 @@ class BusStopsController < ApplicationController
   end
 
   def show
-      # @busStop = BusStop.find(params[:id])
-      @busStop = BusStop.find_by(:name => params[:name])
+      @busStop = BusStop.find(params[:id])
+      #@busStop = BusStop.find_by(:name => params[:name])
   end
 
   
@@ -28,7 +28,8 @@ class BusStopsController < ApplicationController
           redirect_to(root_path, alert: "Empty field!") and return
           else
           @parameter = params[:search].downcase
-          @results = BusStop.all.where("lower(name) LIKE :search", search: "%#{@parameter}%")
+          @results = BusStop.where("lower(name) LIKE :search", search: "%#{@parameter}%")
+          
       end
   end
   

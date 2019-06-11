@@ -1,10 +1,10 @@
 <%= render '/layouts/header' %>
+<div class="container">
+    <header><h1 class="display-4"><%= @busStop.name %></h1></header>
 
-<header><h1 class="display-4"><%= @busStop.title %></h1></header>
+    <p>Coordinates: <%= @busStop.latitude %> <%= @busStop.longitude %></p>
+    <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&zoom=17&markers=#{@busStop.latitude}%2C#{@busStop.longitude}&key=AIzaSyCjSZ6Xz70elyGUyWVH4mV7OyXWshRYhXY" %>
 
 
-<p>Coordinates: <%= @busStop.latitude %> <%= @busStop.longitude %></p>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&zoom=17&markers=#{@busStop.latitude}%2C#{@busStop.longitude}&key=AIzaSyCjSZ6Xz70elyGUyWVH4mV7OyXWshRYhXY" %>
-
-
-<%# citation:  https://medium.com/@pai.sarah89/displaying-google-static-map-with-geocoder-gem-8b128ec9c8ba %>
+    <%# citation:  https://medium.com/@pai.sarah89/displaying-google-static-map-with-geocoder-gem-8b128ec9c8ba %>
+</div>
