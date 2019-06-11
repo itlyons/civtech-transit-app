@@ -1,6 +1,6 @@
 <header><h1 class="display-4"><%= @busStop.title %></h1></header>
 
-<p>Address: <%= @busStop.address %></p>
+
 <p>Coordinates: <%= @busStop.latitude %> <%= @busStop.longitude %></p>
 <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&zoom=17&markers=#{@busStop.latitude}%2C#{@busStop.longitude}&key=AIzaSyCjSZ6Xz70elyGUyWVH4mV7OyXWshRYhXY" %>
 

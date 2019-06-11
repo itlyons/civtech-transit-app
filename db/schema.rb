@@ -12,18 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_06_10_163528) do
 
-  create_table "bus_stop_locations", force: :cascade do |t|
-    t.string "Street"
-    t.string "Cross_street"
-    t.string "Direction"
-    t.string "City"
-    t.string "Public_name"
-    t.integer "Point_X"
-    t.integer "Point_Y"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "bus_stops", force: :cascade do |t|
     t.float "stop_id"
     t.string "name"
