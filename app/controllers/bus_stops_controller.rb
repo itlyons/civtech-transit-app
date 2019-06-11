@@ -22,6 +22,10 @@ class BusStopsController < ApplicationController
       @busStop = BusStop.find_by(:name => params[:name])
   end
 
+  
+  def search
+  end
+  
   private
 
   def bus_stop_params
