@@ -3,28 +3,24 @@
         <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" %>
     </head>
 
-
-
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">BusScout Beta</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-            </ul>
-        </div>
-    </nav>
+<%= render '/layouts/header' %>
 
 
     <div class="container">
         <header><h1 class="display-4">Search for your stop:</h1></header>
-        <form action='/bus_stops/show'>
-            <input name='name' placeholder="Enter in your bus stop name">
-            <input type='submit'>
-        </form>
+        <!-- <form action='/bus_stops/show'> -->
+        <!-- <input name='name' placeholder="Enter in your bus stop name"> -->
+        <!-- </form> -->
+            <%= form_tag(search_page_path, :method => "get",
+                class: 'navbar-form navbar-left') do %>
+              <div class="input-group">
+                <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
+                <div class="input-group-btn">
+                  <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
+                </div>
+              </div>
+            <% end %>
+
     </div>
 
 <br>
