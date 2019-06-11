@@ -12,8 +12,9 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'geocoder'
 gem 'uglifier', '>= 1.3.0'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
-group :production do 
+group :production do
 	gem 'pg'
 end
 

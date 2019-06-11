@@ -1,12 +1,17 @@
-<%= form_for @busStop do |f| %>
+<%= form_for @report do |f| %>
   <fieldset class="form-group">
-    <%= f.label :title %>
-    <%= f.text_field :title, class: "form-control" %>
+    <%= f.label :stop_name, 'Bus Stop' %>
+    <%= f.text_field :stop_name, class: "form-control" %>
   </fieldset>
 
   <fieldset class="form-group">
-    <%= f.label :visited_by %>
+    <%= f.label :visited_by, 'Scout ID' %>
     <%= f.text_field :visited_by, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.label :complaint, 'Complaint' %>
+    <%= f.text_field :complaint, class: "form-control" %>
   </fieldset>
 
   <%= f.submit 'Add!', class: 'btn btn-primary' %>

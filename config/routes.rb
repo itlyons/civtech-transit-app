@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :bus_stops, except: [:update, :edit, :destroy]
   root 'bus_stops#index'
   get '/search' => 'bus_stops#search', :as => 'search_page'
+
+  resources :reports, except: [:update, :edit, :destroy]
+  root 'reports#index'
 end
-
-

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_10_163528) do
+ActiveRecord::Schema.define(version: 2019_06_11_204533) do
 
   create_table "bus_stops", force: :cascade do |t|
     t.float "stop_id"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 2019_06_10_163528) do
     t.float "longitude"
     t.string "routes_served"
     t.string "direction"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.string "complaint"
+    t.string "visited_by"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
