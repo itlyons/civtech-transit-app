@@ -49,3 +49,4 @@ node_modules/
 
 #Ignore underlying data
 /db/bus_stop_data
+g

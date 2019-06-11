@@ -23,7 +23,3 @@ ogr2ogr -f GeoJSON -t_srs EPSG:4269 [filename].geojson [filename].shp
 
 6. Run the rake task:  bundle exec rake [rake_file]:[task_name]
       eg: bundle exec rake import_geojson_bustops:add_bus_data
-
-
-
-TESTing to see if can pust from heroku
