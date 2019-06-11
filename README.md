@@ -2,7 +2,13 @@
 A rails application intended to allow users to make reports about transit stops in Chicago
 
 
-Steps to run locally:
+### To demo:
+
+After cloning the repo and changing into the directory,
+1) Run
+'''
+$ bundle install
+'''
 
 1) clone the repo
 2) change into the repo directory
