@@ -5,13 +5,11 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
-
+gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-# gem 'bootstrap'
 gem 'geocoder'
 gem 'uglifier', '>= 1.3.0'
 
@@ -20,7 +18,6 @@ group :production do
 end
 
 #stylesheets
-gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'turbolinks'
 # group :development, :test do
