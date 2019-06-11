@@ -7,14 +7,11 @@
 
 
     <div class="container">
-        <header><h1 class="display-4">Search for your stop:</h1></header>
-        <!-- <form action='/bus_stops/show'> -->
-        <!-- <input name='name' placeholder="Enter in your bus stop name"> -->
-        <!-- </form> -->
+        <header><h1 class="display-4">Search for your stop using a street name:</h1></header>
             <%= form_tag(search_page_path, :method => "get",
                 class: 'navbar-form navbar-left') do %>
               <div class="input-group">
-                <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
+                <%= search_field_tag :search, params[:search], placeholder: "e.g. 'Halsted'", class: "form-control" %>
                 <div class="input-group-btn">
                   <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
                 </div>

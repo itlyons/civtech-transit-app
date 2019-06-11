@@ -1,6 +1,6 @@
 <%= render '/layouts/header' %>
 <div class="container">
-    <header><h1 class="display-4"><%= @busStop.name %></h1></header>
+    <header><h1 class="display-4"><%= @busStop.name %> </h1></header>
 
     <p>Coordinates: <%= @busStop.latitude %> <%= @busStop.longitude %></p>
     <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&zoom=17&markers=#{@busStop.latitude}%2C#{@busStop.longitude}&key=AIzaSyCjSZ6Xz70elyGUyWVH4mV7OyXWshRYhXY" %>

@@ -20,9 +20,9 @@ csv.each do |row|
     t.latitude = row['POINT_Y']
     t.longitude = row['POINT_X']
     t.routes_served = row['ROUTESSTPG']
+    t.direction = row['DIR']
     t.save
     puts "#{t.stop_id} saved"
 end
 
 puts "There are now #{Transaction.count} rows in the transactions table"
-

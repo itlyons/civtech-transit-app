@@ -1,4 +1,5 @@
 <li>
   <%= link_to bus_stop.name, bus_stop_path(bus_stop) %>
   serving <strong><%= bus_stop.routes_served %></strong>
+  in the direction of <strong><%= bus_stop.direction %></strong>
 </li>
