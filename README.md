@@ -5,15 +5,17 @@ This is development stage 1 of 2 ([click here](https://github.com/kochandrea/bus
 
 
 #### Example:
-Using the search bar, a citizen may lookup their bus stop by using a street name.  Let's see what happens when we search for 'Cornell'.
+Using the search bar, a user may lookup their bus stop by using a street name.  Let's see what happens when a search is entered for 'Cornell'.
 
 <img width="748" alt="Screen Shot 2019-06-11 at 7 04 59 PM" src="https://user-images.githubusercontent.com/35736047/59314750-5025d200-8c7c-11e9-91e8-32f101e8895f.png">
 
-Once they have entered a search, any bus stop with that street name will be returned and they can select their stop from the list.  
+
+Once the user has entered a search, any bus stop with that street name will be returned and the user can select their stop from the list.  The search results are provided at route level (i.e. NB, EB, SB, WB which are north, east, south, and west bound, respectively). 
 
 <img width="550" alt="Screen Shot 2019-06-11 at 7 05 15 PM" src="https://user-images.githubusercontent.com/35736047/59314782-751a4500-8c7c-11e9-9ba2-1170b9901b0b.png">
 
-To verify that they have the correct stop, a google map image will populate.  **NOTE:**  Under the 'Reports' section, a user will be able to view current reports for that bus stop as well as submit a report of their own. (See [stage 2](https://github.com/kochandrea/bus-scout))
+
+To verify that the user has the correct stop, a google map image will populate.  **NOTE:**  Under the 'Reports' section, a user will be able to view current reports for that bus stop as well as submit a report of their own. (See [stage 2](https://github.com/kochandrea/bus-scout))
 
 <img width="560" alt="Screen Shot 2019-06-11 at 7 05 33 PM" src="https://user-images.githubusercontent.com/35736047/59314785-7f3c4380-8c7c-11e9-87b4-859a341d9b2a.png">
 
