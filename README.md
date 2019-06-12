@@ -10,7 +10,7 @@ Using the search bar, a user may lookup their bus stop by using a street name.  
 <img width="748" alt="Screen Shot 2019-06-11 at 7 04 59 PM" src="https://user-images.githubusercontent.com/35736047/59314750-5025d200-8c7c-11e9-91e8-32f101e8895f.png">
 
 
-Once the user has entered a search, any bus stop with that street name will be returned and the user can select their stop from the list.  The search results are provided at route level (i.e. NB, EB, SB, WB which are north, east, south, and west bound, respectively). 
+Once the user has entered a search, any bus stop with that street name will be returned and the user can select their stop from the list.  Bus stop search results are provided at the direction level (i.e. NB, EB, SB, WB which are north, east, south, and west bound, respectively) and identify the bus routes are served at the bus stop. 
 
 <img width="550" alt="Screen Shot 2019-06-11 at 7 05 15 PM" src="https://user-images.githubusercontent.com/35736047/59314782-751a4500-8c7c-11e9-9ba2-1170b9901b0b.png">
 
