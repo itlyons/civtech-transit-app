@@ -20,7 +20,13 @@ To verify that the user has the correct stop, a google map image will populate. 
 <img width="560" alt="Screen Shot 2019-06-11 at 7 05 33 PM" src="https://user-images.githubusercontent.com/35736047/59314785-7f3c4380-8c7c-11e9-87b4-859a341d9b2a.png">
 
 
+### Useful tutorials:
+- Sitepoint:  [Geocoder:  Display Maps and Find Places in Rails](https://www.sitepoint.com/geocoder-display-maps-and-find-places-in-rails/)
+- Melvin Ch'ng:  [Search Feature for Rails](https://melvinchng.github.io/rails/SearchFeature.html#chapter-4-search-feature)
 
+### Team members:
+- Ian Lyons
+- Andrea Koch
 
 ## To demo:
 
