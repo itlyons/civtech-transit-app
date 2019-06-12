@@ -1,8 +1,10 @@
 # Welcome to the Bus Scout!
 A rails application intended to allow users to make reports about transit stops in Chicago.
 
-This is development stage 1 of 2 ([click here](https://github.com/kochandrea/bus-scout) for stage 2).  Pre-existing [Chicago bus stop data](https://data.cityofchicago.org/api/views/qs84-j7wh/rows.csv?accessType=DOWNLOAD) was loaded into a sqlite database and made searchable in our rails application.
+This is development stage 1 of 2 ([click here](https://github.com/kochandrea/bus-scout) for stage 2).  Pre-existing [Chicago Transit Authority bus stop data](https://data.cityofchicago.org/api/views/qs84-j7wh/rows.csv?accessType=DOWNLOAD) found at [data.gov](https://catalog.data.gov/dataset/cta-bus-stops) was loaded into a sqlite database and made searchable in our rails application.
 
+
+#### Example:
 Using the search bar, a citizen may lookup their bus stop by using a street name.  Let's see what happens when we search for 'Cornell'.
 
 <img width="748" alt="Screen Shot 2019-06-11 at 7 04 59 PM" src="https://user-images.githubusercontent.com/35736047/59314750-5025d200-8c7c-11e9-91e8-32f101e8895f.png">
@@ -18,7 +20,7 @@ To verify that they have the correct stop, a google map image will populate.  At
 
 
 
-### To demo:
+## To demo:
 
 After cloning the repo and changing into the directory,
 1) Install Gemfile dependencies
