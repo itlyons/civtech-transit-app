@@ -25,8 +25,8 @@ To verify that the user has the correct stop, a google map image will populate. 
 - Melvin Ch'ng:  [Search Feature for Rails](https://melvinchng.github.io/rails/SearchFeature.html#chapter-4-search-feature)
 
 ### Team members:
-- Ian Lyons
-- Andrea Koch
+- [Ian Lyons](https://github.com/itlyons)
+- [Andrea Koch](https://github.com/kochandrea)
 
 ## To demo:
 
